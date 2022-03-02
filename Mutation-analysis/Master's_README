@@ -1,0 +1,16 @@
+Dystrophin_ABD1
+Some code from my Master's research on elucidating the disease mechanism for Muscular Dystrophy by studying the unfolding of 
+the ABD1 region of Dystrophin.
+
+A breif overview: In a 2018 publication in the Biophysical journal 
+(link: https://www.ncbi.nlm.nih.gov/pubmed/30007583, title: Dynamics of Dystrophin's Actin-Binding Domain.)
+I determined to study the ABD1 region of Dystrophin because of the high density of disease causing mutations. 
+Furthermore, I measured a significant difference in the calculated change in heat capacities of the disease casuing mutations
+suggesting that the folded stability of the ABD1 region might have a major role in the proper functioning of ABD1. The paper 
+explores these avenues.
+
+This repository compiles the code I used to make these analyses which I originally did in R as well as the analysis of the 
+thermodynamics of ABD1 unfolding which I also wrote in R.
+
+This code is provided for the purpose of reproducibility on the part of other researchers interested in studying MD or for 
+those interested in the mutation analysis or thermodynamic analysis produced for this study.
