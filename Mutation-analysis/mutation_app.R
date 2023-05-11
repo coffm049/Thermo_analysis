@@ -2,7 +2,12 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 library(shinydashboard)
-mut.df <- read.csv(file.choose(), header = TRUE)
+
+
+
+
+mut.df <- data.frame("Position" = 1:1000,
+)
 
 
 ui <- fluidPage(

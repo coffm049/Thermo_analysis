@@ -1,0 +1,29 @@
+---
+title: Geometric estimation
+server: shiny
+---
+
+
+```{r simulate data}
+#| echo : false
+#| include : false
+source("simulate_data.R")
+source("estimators.R")
+df <- data.frame(Temp = 1:1000 / 10 + 273) %>%
+  mutate(Cp = Creat_curve(Temp = Temp, dH = 100, dCp=3, Tm=310))
+```
+
+# make a geometric estimate
+```{r}
+#| echo : false
+g.ests <- geom_ests(df$Temp, df$Cp, T.begin = 300, T.end = 320)
+```
+
+# make a regresssion estimate
+```{r}
+#| echo : false
+nl.ests <- two.state(df, guess_Tm = 305, guess_dH = 110, guess_dCp = 2)
+```
+
+
+ 
